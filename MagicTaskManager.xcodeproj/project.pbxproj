@@ -19,6 +19,10 @@
 		35AAA04D28C76937002A8E4A /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35AAA04728C76937002A8E4A /* Montserrat-ExtraBold.ttf */; };
 		35AAA04E28C76937002A8E4A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35AAA04828C76937002A8E4A /* Montserrat-SemiBold.ttf */; };
 		35AAA04F28C76937002A8E4A /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35AAA04928C76937002A8E4A /* Montserrat-Light.ttf */; };
+		35AAA05128C76D59002A8E4A /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05028C76D59002A8E4A /* MainTabBarController.swift */; };
+		35AAA05328C76E4E002A8E4A /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */; };
+		35AAA05528C76E64002A8E4A /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05428C76E64002A8E4A /* TodoViewController.swift */; };
+		35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		35AAA04728C76937002A8E4A /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		35AAA04828C76937002A8E4A /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		35AAA04928C76937002A8E4A /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		35AAA05028C76D59002A8E4A /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		35AAA05428C76E64002A8E4A /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSettingSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,12 @@
 				35AAA04328C76786002A8E4A /* Fonts */,
 				35AAA04228C7677F002A8E4A /* Model */,
 				35AAA02B28C76161002A8E4A /* AppDelegate.swift */,
+				35AAA05428C76E64002A8E4A /* TodoViewController.swift */,
+				35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */,
+				35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */,
 				35AAA02D28C76161002A8E4A /* SceneDelegate.swift */,
 				35AAA02F28C76161002A8E4A /* ViewController.swift */,
+				35AAA05028C76D59002A8E4A /* MainTabBarController.swift */,
 				35AAA03728C76162002A8E4A /* Assets.xcassets */,
 				35AAA03928C76162002A8E4A /* LaunchScreen.storyboard */,
 				35AAA03C28C76162002A8E4A /* Info.plist */,
@@ -179,8 +191,12 @@
 			files = (
 				35AAA03628C76161002A8E4A /* MagicTaskManager.xcdatamodeld in Sources */,
 				35AAA03028C76161002A8E4A /* ViewController.swift in Sources */,
+				35AAA05528C76E64002A8E4A /* TodoViewController.swift in Sources */,
+				35AAA05128C76D59002A8E4A /* MainTabBarController.swift in Sources */,
+				35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */,
 				35AAA02C28C76161002A8E4A /* AppDelegate.swift in Sources */,
 				35AAA02E28C76161002A8E4A /* SceneDelegate.swift in Sources */,
+				35AAA05328C76E4E002A8E4A /* NotesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
