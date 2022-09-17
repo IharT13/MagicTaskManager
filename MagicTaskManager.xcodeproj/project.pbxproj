@@ -23,6 +23,8 @@
 		35AAA05328C76E4E002A8E4A /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */; };
 		35AAA05528C76E64002A8E4A /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05428C76E64002A8E4A /* TodoViewController.swift */; };
 		35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */; };
+		35D25F9828D5F27400079729 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25F9728D5F27400079729 /* NetworkingManager.swift */; };
+		35D25F9C28D5F54100079729 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25F9B28D5F54100079729 /* UserStruct.swift */; };
 		C3A1C28DF700BFFB801CB7B9 /* Pods_MagicTaskManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF735522B1676047CA4760 /* Pods_MagicTaskManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 		35AAA05428C76E64002A8E4A /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSettingSwiftUIView.swift; sourceTree = "<group>"; };
+		35D25F9728D5F27400079729 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		35D25F9B28D5F54100079729 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
 		8FC23460F74BB47F4E3BD971 /* Pods-MagicTaskManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTaskManager.release.xcconfig"; path = "Target Support Files/Pods-MagicTaskManager/Pods-MagicTaskManager.release.xcconfig"; sourceTree = "<group>"; };
 		C2DF735522B1676047CA4760 /* Pods_MagicTaskManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicTaskManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75CF4E05FDCF1CD5D18F6A7 /* Pods-MagicTaskManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTaskManager.debug.xcconfig"; path = "Target Support Files/Pods-MagicTaskManager/Pods-MagicTaskManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,9 +87,10 @@
 		35AAA02A28C76161002A8E4A /* MagicTaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				35AAA04228C7677F002A8E4A /* Model */,
+				35D25F9928D5F42200079729 /* Manager */,
 				35AAA05828C76FE3002A8E4A /* Controller */,
 				35AAA04328C76786002A8E4A /* Fonts */,
-				35AAA04228C7677F002A8E4A /* Model */,
 				35AAA02B28C76161002A8E4A /* AppDelegate.swift */,
 				35AAA02D28C76161002A8E4A /* SceneDelegate.swift */,
 				35AAA02F28C76161002A8E4A /* ViewController.swift */,
@@ -100,6 +105,7 @@
 		35AAA04228C7677F002A8E4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				35D25F9B28D5F54100079729 /* UserStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,13 +142,20 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		35D25F9928D5F42200079729 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				35D25F9728D5F27400079729 /* NetworkingManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		95537498E3734F8836845CA3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E75CF4E05FDCF1CD5D18F6A7 /* Pods-MagicTaskManager.debug.xcconfig */,
 				8FC23460F74BB47F4E3BD971 /* Pods-MagicTaskManager.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,8 +293,10 @@
 				35AAA05128C76D59002A8E4A /* MainTabBarController.swift in Sources */,
 				35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */,
 				35AAA02C28C76161002A8E4A /* AppDelegate.swift in Sources */,
+				35D25F9828D5F27400079729 /* NetworkingManager.swift in Sources */,
 				35AAA02E28C76161002A8E4A /* SceneDelegate.swift in Sources */,
 				35AAA05328C76E4E002A8E4A /* NotesTableViewController.swift in Sources */,
+				35D25F9C28D5F54100079729 /* UserStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
