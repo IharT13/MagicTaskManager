@@ -13,7 +13,7 @@ final class NetworkingManager {
         static let todos = "/todos"
     }
     
-    func getData (completion: @escaping(([ToDo]) -> Void)) {
+    public func getData (completion: @escaping(([ToDo]) -> Void)) {
         AF.request(Constants.baseURL + EndPoints.todos).responseDecodable(of: [ToDo].self) { response in
             switch response.result {
             case .success(let model):
