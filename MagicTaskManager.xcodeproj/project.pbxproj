@@ -25,6 +25,10 @@
 		35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */; };
 		35D25F9828D5F27400079729 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25F9728D5F27400079729 /* NetworkingManager.swift */; };
 		35D25F9C28D5F54100079729 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25F9B28D5F54100079729 /* UserStruct.swift */; };
+		35D25FA228D6352C00079729 /* +UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25FA128D6352C00079729 /* +UIFont.swift */; };
+		35D25FA428D6396D00079729 /* +UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25FA328D6396D00079729 /* +UIView.swift */; };
+		35D25FA628D639E100079729 /* +UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25FA528D639E100079729 /* +UIStackView.swift */; };
+		35D25FA828D63ABA00079729 /* +UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D25FA728D63ABA00079729 /* +UIColor.swift */; };
 		C3A1C28DF700BFFB801CB7B9 /* Pods_MagicTaskManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF735522B1676047CA4760 /* Pods_MagicTaskManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,10 @@
 		35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSettingSwiftUIView.swift; sourceTree = "<group>"; };
 		35D25F9728D5F27400079729 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		35D25F9B28D5F54100079729 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		35D25FA128D6352C00079729 /* +UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIFont.swift"; sourceTree = "<group>"; };
+		35D25FA328D6396D00079729 /* +UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIView.swift"; sourceTree = "<group>"; };
+		35D25FA528D639E100079729 /* +UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIStackView.swift"; sourceTree = "<group>"; };
+		35D25FA728D63ABA00079729 /* +UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIColor.swift"; sourceTree = "<group>"; };
 		8FC23460F74BB47F4E3BD971 /* Pods-MagicTaskManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTaskManager.release.xcconfig"; path = "Target Support Files/Pods-MagicTaskManager/Pods-MagicTaskManager.release.xcconfig"; sourceTree = "<group>"; };
 		C2DF735522B1676047CA4760 /* Pods_MagicTaskManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagicTaskManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E75CF4E05FDCF1CD5D18F6A7 /* Pods-MagicTaskManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTaskManager.debug.xcconfig"; path = "Target Support Files/Pods-MagicTaskManager/Pods-MagicTaskManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 		35AAA02A28C76161002A8E4A /* MagicTaskManager */ = {
 			isa = PBXGroup;
 			children = (
+				35D25FA028D6347400079729 /* Extensions */,
 				35AAA04228C7677F002A8E4A /* Model */,
 				35D25F9928D5F42200079729 /* Manager */,
 				35AAA05828C76FE3002A8E4A /* Controller */,
@@ -126,9 +135,9 @@
 		35AAA05828C76FE3002A8E4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				35AAA05428C76E64002A8E4A /* TodoViewController.swift */,
-				35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */,
-				35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */,
+				35D25F9F28D5FE1400079729 /* ProfileSettings */,
+				35D25F9E28D5FE0700079729 /* Todo */,
+				35D25F9D28D5FDFB00079729 /* Notes */,
 				35AAA05928C76FF4002A8E4A /* Tabbar */,
 			);
 			path = Controller;
@@ -148,6 +157,41 @@
 				35D25F9728D5F27400079729 /* NetworkingManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		35D25F9D28D5FDFB00079729 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				35AAA05228C76E4E002A8E4A /* NotesTableViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		35D25F9E28D5FE0700079729 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				35AAA05428C76E64002A8E4A /* TodoViewController.swift */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		35D25F9F28D5FE1400079729 /* ProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				35AAA05628C76E89002A8E4A /* PersonSettingSwiftUIView.swift */,
+			);
+			path = ProfileSettings;
+			sourceTree = "<group>";
+		};
+		35D25FA028D6347400079729 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35D25FA128D6352C00079729 /* +UIFont.swift */,
+				35D25FA328D6396D00079729 /* +UIView.swift */,
+				35D25FA528D639E100079729 /* +UIStackView.swift */,
+				35D25FA728D63ABA00079729 /* +UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		95537498E3734F8836845CA3 /* Pods */ = {
@@ -287,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D25FA428D6396D00079729 /* +UIView.swift in Sources */,
+				35D25FA628D639E100079729 /* +UIStackView.swift in Sources */,
 				35AAA03628C76161002A8E4A /* MagicTaskManager.xcdatamodeld in Sources */,
 				35AAA03028C76161002A8E4A /* ViewController.swift in Sources */,
 				35AAA05528C76E64002A8E4A /* TodoViewController.swift in Sources */,
@@ -294,9 +340,11 @@
 				35AAA05728C76E89002A8E4A /* PersonSettingSwiftUIView.swift in Sources */,
 				35AAA02C28C76161002A8E4A /* AppDelegate.swift in Sources */,
 				35D25F9828D5F27400079729 /* NetworkingManager.swift in Sources */,
+				35D25FA828D63ABA00079729 /* +UIColor.swift in Sources */,
 				35AAA02E28C76161002A8E4A /* SceneDelegate.swift in Sources */,
 				35AAA05328C76E4E002A8E4A /* NotesTableViewController.swift in Sources */,
 				35D25F9C28D5F54100079729 /* UserStruct.swift in Sources */,
+				35D25FA228D6352C00079729 /* +UIFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

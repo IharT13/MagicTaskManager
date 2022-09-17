@@ -37,6 +37,4 @@ final class MainTabBarController: UITabBarController {
         notesTableViewVC.title = "Задачи"
         personSettingsSwiftUIView.title = "Настройки"
     }
-    
-    
 }
