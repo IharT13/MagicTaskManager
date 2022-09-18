@@ -46,6 +46,6 @@ final class ToDoTableViewCell: UITableViewCell {
     }
     
     private func addSetups() {
-        contentView.backgroundColor = .theme.background
+        contentView.backgroundColor = AppColor.lightOrangeColor
     }
 }

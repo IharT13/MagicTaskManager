@@ -1,16 +1,13 @@
 import UIKit
 
 final class TodoStackView: UIStackView {
-    // MARK: - Properties
     
-    // MARK: Private
+    static let identifier = "TodoStackView"
     
-    private let lineStackView: UIStackView = .init()
-    private let circleImage: UIImageView = .init()
-    private let lineView: UIView = .init()
-    private let todoView: ToDoView = .init()
-
-    // MARK: - Initialization
+    private let lineStackView = UIStackView()
+    private let circleImageView = UIImageView()
+    private let lineView = UIView()
+    private let todoView = ToDoView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,12 +16,9 @@ final class TodoStackView: UIStackView {
         addContraints()
     }
     
-    @available(*, unavailable)
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // MARK: - API
     
     func set(_ label: String, _ isDone: Bool) {
         todoView.set(label, isDone)
@@ -46,10 +40,10 @@ final class TodoStackView: UIStackView {
     }
     
     private func addCircleImageConstraints() {
-        circleImage.translatesAutoresizingMaskIntoConstraints = false
-        circleImage.heightAnchor.constraint(equalTo: lineStackView.heightAnchor, multiplier: 0.12).isActive = true
-        circleImage.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        circleImage.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        circleImageView.translatesAutoresizingMaskIntoConstraints = false
+        circleImageView.heightAnchor.constraint(equalTo: lineStackView.heightAnchor, multiplier: 0.12).isActive = true
+        circleImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
+        circleImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
     
     private func addLineViewConstraints() {
@@ -62,8 +56,8 @@ final class TodoStackView: UIStackView {
     // MARK: Private
     
     private func addSubviews() {
-        addArrangedSubviews(lineStackView, todoView)
-        lineStackView.addArrangedSubviews(circleImage,
+        addAllArrangedSubviews(lineStackView, todoView)
+        lineStackView.addAllArrangedSubviews(circleImageView,
                                           lineView)
     }
     
@@ -89,11 +83,12 @@ final class TodoStackView: UIStackView {
     }
     
     private func addCircleImageSetups() {
-        circleImage.image = UIImage(systemName: "circle.inset.filled")
-        circleImage.tintColor = .theme.accent
+        circleImageView.image = UIImage(systemName: "circle.inset.filled")
+        circleImageView.tintColor = AppColor.lightOrangeColor
     }
 
     private func addLineSetups() {
-        lineView.backgroundColor = .theme.accent
+        lineView.backgroundColor = AppColor.redColor
     }
 }
+

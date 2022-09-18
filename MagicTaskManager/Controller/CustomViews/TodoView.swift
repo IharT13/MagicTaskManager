@@ -5,16 +5,16 @@ final class ToDoView: UIView {
     
     // MARK: Private
     
-    private let todoStackView = UIStackView()
-    private let titleAndCheckBoxSV = UIStackView()
-    private let titleLabel = UILabel()
-    private let todoSwith = UISwitch()
-    private let imageStackView = UIStackView()
-    private let personImageView = UIImageView()
-    private let secondPersonImageView = UIImageView()
-    private let thirthyPersonImageView = UIImageView()
-    private let spacer = UIView()
-    private let timeLabel = UILabel()
+    private let todoStackView: UIStackView = .init()
+    private let titleAndCheckBoxSV: UIStackView = .init()
+    private let titleLabel: UILabel = .init()
+    private let todoSwith: UISwitch = .init()
+    private let imageStackView: UIStackView = .init()
+    private let personImageView: UIImageView = .init()
+    private let secondPersonImageView: UIImageView = .init()
+    private let thirthyPersonImageView: UIImageView = .init()
+    private let spacer: UIView = .init()
+    private let timeLabel: UILabel = .init()
 
     // MARK: - Initialization
     
@@ -58,6 +58,7 @@ final class ToDoView: UIView {
         addTodoSwithConstraints()
         addImageStackViewConstraints()
         addPersonImageViewConstraints()
+        addTodoSwitchSetups()
     }
     
     private func addTodoStackViewConstraints() {
@@ -127,7 +128,7 @@ final class ToDoView: UIView {
     
     private func addTodoViewSetups() {
         layer.cornerRadius = 20
-        backgroundColor = .theme.cellColor
+        backgroundColor = AppColor.redColor
     }
     
     private func addTodoStackViewSetups() {
@@ -152,20 +153,20 @@ final class ToDoView: UIView {
     }
     
     private func addTitleLabelSetups() {
-        titleLabel.textColor = .theme.title
-        titleLabel.font = .altone(25, .bold)
+        titleLabel.textColor = AppColor.textColor
+        titleLabel.font = .montserrat(25, .bold)
         titleLabel.numberOfLines = 2
     }
     
     private func addTimeLabelSetups() {
         timeLabel.text = "\(Int.random(in: 0..<23)):\(Int.random(in: 0..<5))\(Int.random(in: 0..<9))"
-        timeLabel.textColor = .theme.title
-        timeLabel.font = .altone(15, .light)
+        timeLabel.textColor = AppColor.textColor
+        timeLabel.font = .montserrat(15, .regular)
     }
     
     private func addTodoSwitchSetups() {
-        todoSwith.backgroundColor = .theme.cellColor
-        todoSwith.onTintColor = .theme.accent
+        todoSwith.backgroundColor = AppColor.redColor
+        todoSwith.onTintColor = AppColor.redColor
     }
     
     // MARK: - Helpers
@@ -178,3 +179,4 @@ final class ToDoView: UIView {
         imageView.contentMode = .scaleAspectFill
     }
 }
+
